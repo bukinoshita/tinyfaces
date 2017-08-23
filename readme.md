@@ -1,7 +1,7 @@
 # tinyfaces [![Build Status](https://travis-ci.org/bukinoshita/tinyfaces.svg?branch=master)](https://travis-ci.org/bukinoshita/tinyfaces)
 
 
-> A JavaScript wrapper for TinyFaces API
+> A JavaScript wrapper for [TinyFaces](https://github.com/maximedegreve/TinyFaces) API
 
 
 ## Install
