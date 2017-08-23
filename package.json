@@ -1,0 +1,26 @@
+{
+  "name": "tinyfaces",
+  "version": "0.0.0",
+  "description": "A JavaScript wrapper for TinyFaces API",
+  "main": "index.js",
+  "repository": "https://github.com/bukinoshita/tinyfaces.git",
+  "author": "Bu Kinoshita <bukinoshita@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "dependencies": {
+    "got": "^7.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "eslint-config-prettier": "^2.3.0",
+    "xo": "^0.18.2"
+  },
+  "xo": {
+    "extends": ["prettier"],
+    "rules": {
+      "camelcase": 0
+    }
+  }
+}
