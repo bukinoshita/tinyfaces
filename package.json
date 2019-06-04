@@ -10,7 +10,7 @@
     "test": "xo && ava"
   },
   "dependencies": {
-    "got": "^7.1.0"
+    "got": "^9.0.0"
   },
   "devDependencies": {
     "ava": "0.22.0",
