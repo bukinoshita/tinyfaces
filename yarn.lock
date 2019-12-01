@@ -256,11 +256,30 @@
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
 
+"@sindresorhus/is@^1.0.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-1.2.0.tgz#63ce3638cb85231f3704164c90a18ef816da3fb7"
+
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@szmarczak/http-timer/-/http-timer-1.1.2.tgz#b1665e2c461a2cd92f4c1bbf50d5454de0d4b421"
   dependencies:
     defer-to-connect "^1.0.1"
+
+"@szmarczak/http-timer@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@szmarczak/http-timer/-/http-timer-3.1.0.tgz#b1b207a2b3bfdf362642623fc2ecbee5ce22f534"
+  dependencies:
+    defer-to-connect "^1.1.0"
+
+"@types/cacheable-request@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@types/cacheable-request/-/cacheable-request-6.0.1.tgz#5d22f3dded1fd3a84c0bbeb5039a7419c2c91976"
+  dependencies:
+    "@types/http-cache-semantics" "*"
+    "@types/keyv" "*"
+    "@types/node" "*"
+    "@types/responselike" "*"
 
 "@types/events@*":
   version "3.0.0"
@@ -274,6 +293,16 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
+"@types/http-cache-semantics@*":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@types/http-cache-semantics/-/http-cache-semantics-4.0.0.tgz#9140779736aa2655635ee756e2467d787cfe8a2a"
+
+"@types/keyv@*":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@types/keyv/-/keyv-3.1.0.tgz#1961f73b3bf1084c044f79a070b45a5bfa6578b9"
+  dependencies:
+    "@types/node" "*"
+
 "@types/minimatch@*", "@types/minimatch@^3.0.3":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -285,6 +314,12 @@
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
+
+"@types/responselike@*":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/responselike/-/responselike-1.0.0.tgz#251f4fe7d154d2bad125abe1b429b23afd262e29"
+  dependencies:
+    "@types/node" "*"
 
 acorn-jsx@^5.0.2:
   version "5.0.2"
@@ -624,6 +659,12 @@ cache-base@^1.0.1:
     union-value "^1.0.0"
     unset-value "^1.0.0"
 
+cacheable-lookup@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/cacheable-lookup/-/cacheable-lookup-0.2.1.tgz#f474ae2c686667d7ea08c43409ad31b2b31b26c2"
+  dependencies:
+    keyv "^3.1.0"
+
 cacheable-request@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/cacheable-request/-/cacheable-request-6.0.0.tgz#4a1727414e02ac4af82560c4da1b61daa3fa2b63"
@@ -635,6 +676,18 @@ cacheable-request@^6.0.0:
     lowercase-keys "^1.0.1"
     normalize-url "^3.1.0"
     responselike "^1.0.2"
+
+cacheable-request@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/cacheable-request/-/cacheable-request-7.0.0.tgz#12421aa084e943ec81eac8c93e56af90c624788a"
+  dependencies:
+    clone-response "^1.0.2"
+    get-stream "^5.1.0"
+    http-cache-semantics "^4.0.0"
+    keyv "^3.0.0"
+    lowercase-keys "^2.0.0"
+    normalize-url "^4.1.0"
+    responselike "^2.0.0"
 
 call-matcher@^1.0.0:
   version "1.0.1"
@@ -962,6 +1015,12 @@ decompress-response@^3.3.0:
   dependencies:
     mimic-response "^1.0.0"
 
+decompress-response@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/decompress-response/-/decompress-response-5.0.0.tgz#7849396e80e3d1eba8cb2f75ef4930f76461cb0f"
+  dependencies:
+    mimic-response "^2.0.0"
+
 deep-equal@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-1.0.1.tgz#f5d260292b660e084eff4cdbc9f08ad3247448b5"
@@ -993,6 +1052,10 @@ defaults@^1.0.3:
 defer-to-connect@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/defer-to-connect/-/defer-to-connect-1.0.2.tgz#4bae758a314b034ae33902b5aac25a8dd6a8633e"
+
+defer-to-connect@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/defer-to-connect/-/defer-to-connect-1.1.0.tgz#b41bd7efa8508cef13f8456975f7a278c72833fd"
 
 define-properties@^1.1.2, define-properties@^1.1.3:
   version "1.1.3"
@@ -1669,6 +1732,12 @@ get-stream@^4.0.0, get-stream@^4.1.0:
   dependencies:
     pump "^3.0.0"
 
+get-stream@^5.0.0, get-stream@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-5.1.0.tgz#01203cdc92597f9b909067c3e656cc1f4d3c4dc9"
+  dependencies:
+    pump "^3.0.0"
+
 get-value@^2.0.3, get-value@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
@@ -1745,7 +1814,26 @@ globby@^9.0.0, globby@^9.2.0:
     pify "^4.0.1"
     slash "^2.0.0"
 
-got@^9.0.0, got@^9.6.0:
+got@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/got/-/got-10.0.0.tgz#de5794240952e81784982a372d936d0be05998e5"
+  dependencies:
+    "@sindresorhus/is" "^1.0.0"
+    "@szmarczak/http-timer" "^3.1.0"
+    "@types/cacheable-request" "^6.0.1"
+    cacheable-lookup "^0.2.1"
+    cacheable-request "^7.0.0"
+    decompress-response "^5.0.0"
+    duplexer3 "^0.1.4"
+    get-stream "^5.0.0"
+    lowercase-keys "^2.0.0"
+    mimic-response "^2.0.0"
+    p-cancelable "^2.0.0"
+    responselike "^2.0.0"
+    to-readable-stream "^2.0.0"
+    type-fest "^0.8.0"
+
+got@^9.6.0:
   version "9.6.0"
   resolved "https://registry.yarnpkg.com/got/-/got-9.6.0.tgz#edf45e7d67f99545705de1f7bbeeeb121765ed85"
   dependencies:
@@ -2269,7 +2357,7 @@ json5@^2.1.0:
   dependencies:
     minimist "^1.2.0"
 
-keyv@^3.0.0:
+keyv@^3.0.0, keyv@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/keyv/-/keyv-3.1.0.tgz#ecc228486f69991e49e9476485a5be1e8fc5c4d9"
   dependencies:
@@ -2462,6 +2550,10 @@ lowercase-keys@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-1.0.1.tgz#6f9e30b47084d971a7c820ff15a6c5167b74c26f"
 
+lowercase-keys@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-2.0.0.tgz#2603e78b7b4b0006cbca2fbcc8a3202558ac9479"
+
 lru-cache@^4.0.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.1.1.tgz#622e32e82488b49279114a4f9ecf45e7cd6bba55"
@@ -2576,6 +2668,10 @@ mimic-response@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-1.0.1.tgz#4923538878eef42063cb8a3e3b0798781487ab1b"
 
+mimic-response@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-2.0.0.tgz#996a51c60adf12cb8a87d7fb8ef24c2f3d5ebb46"
+
 minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
@@ -2685,6 +2781,10 @@ normalize-path@^3.0.0:
 normalize-url@^3.1.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
+
+normalize-url@^4.1.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-4.5.0.tgz#453354087e6ca96957bd8f5baf753f5982142129"
 
 npm-run-path@^2.0.0:
   version "2.0.2"
@@ -2799,6 +2899,10 @@ os-tmpdir@^1.0.1, os-tmpdir@~1.0.2:
 p-cancelable@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/p-cancelable/-/p-cancelable-1.1.0.tgz#d078d15a3af409220c886f1d9a0ca2e441ab26cc"
+
+p-cancelable@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/p-cancelable/-/p-cancelable-2.0.0.tgz#4a3740f5bdaf5ed5d7c3e34882c6fb5d6b266a6e"
 
 p-finally@^1.0.0:
   version "1.0.0"
@@ -3255,6 +3359,12 @@ responselike@^1.0.2:
   dependencies:
     lowercase-keys "^1.0.0"
 
+responselike@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/responselike/-/responselike-2.0.0.tgz#26391bcc3174f750f9a79eacc40a12a5c42d7723"
+  dependencies:
+    lowercase-keys "^2.0.0"
+
 restore-cursor@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/restore-cursor/-/restore-cursor-2.0.0.tgz#9f7ee287f82fd326d4fd162923d62129eee0dfaf"
@@ -3644,6 +3754,10 @@ to-readable-stream@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/to-readable-stream/-/to-readable-stream-1.0.0.tgz#ce0aa0c2f3df6adf852efb404a783e77c0475771"
 
+to-readable-stream@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/to-readable-stream/-/to-readable-stream-2.1.0.tgz#82880316121bea662cdc226adb30addb50cb06e8"
+
 to-regex-range@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/to-regex-range/-/to-regex-range-2.1.1.tgz#7c80c17b9dfebe599e27367e0d4dd5590141db38"
@@ -3700,7 +3814,7 @@ type-fest@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.6.0.tgz#8d2a2370d3df886eb5c90ada1c5bf6188acf838b"
 
-type-fest@^0.8.1:
+type-fest@^0.8.0, type-fest@^0.8.1:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
 
